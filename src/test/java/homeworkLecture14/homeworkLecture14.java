@@ -121,7 +121,7 @@ public class homeworkLecture14 {
         usernameField.sendKeys("Teodor123");
         WebElement passwordField = driver.findElement(By.cssSelector("input[formcontrolname='password']"));
         passwordField.sendKeys("teodor123");
-        WebElement signInButton = driver.findElement(By.cssSelector("#sign-in-button"));
+        WebElement signInButton = driver.findElement(By.id("#sign-in-button"));
         signInButton.click();
 
         System.out.println("14. Validate that there is a Profile tab button visible");
@@ -140,9 +140,8 @@ public class homeworkLecture14 {
         WebElement loginBtnTest2 = driver.findElement(By.id("nav-link-login"));
         Assert.assertEquals(true, loginBtnTest2.isDisplayed(), "Login Button is not visible");
 
-        System.out.println("18. Validate that logout button is not visible.");
-        WebElement logoutTwo = driver.findElement(By.cssSelector(".fas.fa-sign-out-alt.fa-lg"));
-        Assert.assertEquals(true, logoutTwo.isDisplayed(), "Logout Button is visible.");
+        System.out.println("18. Validate that logout button is not visible.");;
+        wait.until(ExpectedConditions.invisibilityOf(logoutBtn));
 
 
 }
