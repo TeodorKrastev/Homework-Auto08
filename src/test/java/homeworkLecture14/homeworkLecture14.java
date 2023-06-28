@@ -121,7 +121,7 @@ public class homeworkLecture14 {
         usernameField.sendKeys("Teodor123");
         WebElement passwordField = driver.findElement(By.cssSelector("input[formcontrolname='password']"));
         passwordField.sendKeys("teodor123");
-        WebElement signInButton = driver.findElement(By.id("#sign-in-button"));
+        WebElement signInButton = driver.findElement(By.id("sign-in-button"));
         signInButton.click();
 
         System.out.println("14. Validate that there is a Profile tab button visible");
