@@ -122,7 +122,7 @@ public class homeworkLecture14 {
         WebElement passwordField = driver.findElement(By.cssSelector("input[formcontrolname='password']"));
         passwordField.sendKeys("teodor123");
         WebElement signInButton = driver.findElement(By.id("#sign-in-button"));
-        signInButton.click();
+        signInButton.click(); 
 
         System.out.println("14. Validate that there is a Profile tab button visible");
         WebElement profileLink = driver.findElement(By.id("nav-link-profile"));
